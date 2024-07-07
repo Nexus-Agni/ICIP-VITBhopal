@@ -5,6 +5,7 @@ import React from "react";
 import { AuroraBackground } from "../ui/aurora-background";
 import { FlipWordsDemo } from "./LandingFlipWords";
 
+
 export function Landing() {
   return (
     <AuroraBackground>
