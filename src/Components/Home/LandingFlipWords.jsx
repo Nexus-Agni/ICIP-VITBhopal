@@ -1,6 +1,6 @@
 import React from "react";
 import { FlipWords } from "../ui/flip-words";
-
+import { Highlight } from "../ui/hero-highlight";
 export function FlipWordsDemo() {
   const words = ["Mathematics", "Science", "Linguistics"];
 
@@ -18,8 +18,8 @@ export function FlipWordsDemo() {
           Organized by SASL , VIT Bhopal
         </div>
       </div>
-      <div className="text-lg lg:text-2xl mt-6 text-center text-neutral-500 dark:text-neutral-400">
-        5th - 7th December 2024
+      <div className="lg:text-2xl mt-6 text-lg text-center text-neutral-500 dark:text-neutral-400">
+        25th - 27th November 2024
       </div>
     </div>
   );
