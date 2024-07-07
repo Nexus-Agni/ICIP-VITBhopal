@@ -1,14 +1,8 @@
-import React from 'react'
-import { Landing } from './Landing'
-import Objectives from './Objectives'
+import React from "react";
+import { Landing } from "./Landing";
 
 function Home() {
-  return (
-    <>
-    <Landing/>
-    <Objectives/>
-    </>
-  )
+  return <Landing />;
 }
 
-export default Home
+export default Home;
