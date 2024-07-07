@@ -10,6 +10,9 @@ export function FlipWordsDemo() {
         <div className="lg:text-4xl text-2xl">International Conference on</div>
         Interdisciplinary Perspectives in
         <FlipWords words={words} /> <br />
+        <div className="lg:text-4xl text-2xl mt-2">
+          Organized by SASL , VIT Bhopal
+        </div>
       </div>
     </div>
   );
