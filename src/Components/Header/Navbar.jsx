@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Menu, X } from 'lucide-react'
 import VitLogo from "../../assets/vitLogo.png"
 import { NavLink } from 'react-router-dom'
@@ -20,14 +20,32 @@ const menuItems = [
 ]
 
 export function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 50;
+      if (show) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="relative w-full bg-[#2b3359] text-white">
+    <div className={`w-full bg-[#2b3359] text-white sticky top-0 shadow-lg z-40 ${
+      isScrolled? "bg-opacity-40 bg-[#2b3359] backdrop-blur-sm shadow-sm transition-all ease-in-out": ""}`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
