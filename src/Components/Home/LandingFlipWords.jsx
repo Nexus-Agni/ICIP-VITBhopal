@@ -18,9 +18,9 @@ export function FlipWordsDemo() {
           Organized by SASL , VIT Bhopal
         </div>
       </div>
-      <div className="lg:text-2xl mt-6 text-lg text-center text-neutral-500 dark:text-neutral-400">
+      <Highlight className="lg:text-2xl mt-6 text-lg text-center text-yellow-300 ">
         25th - 27th November 2024
-      </div>
+      </Highlight>
     </div>
   );
 }
