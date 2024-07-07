@@ -7,24 +7,40 @@ export function Footer() {
         <div className="-m-6 flex flex-wrap">
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
             <div className="flex h-full flex-col justify-between">
-              <div className="mb-4 inline-flex items-center">
-                <span className="ml-4 text-sm mb-4 font-bold">
-                  UNIVERSITY ADDRESS
+              <div className="mb-1 inline-flex items-center">
+                <span className="ml-4  text-sm  ">
+                  <div className="font-bold">UNIVERSITY ADDRESS</div>
+                  <div className=" text-xs mt-6 font-semibold   ">
+                    VIT Bhopal University
+                  </div>
+                  <div className=" text-xs mt-1 text-gray-500  ">
+                    Bhopal-Indore Highway
+                  </div>
+                  <div className=" text-xs mt-1 text-gray-500 ">
+                    Kothrikalan, Sehore
+                  </div>
+                  <div className=" text-xs mt-1  text-gray-500 ">
+                    Madhya Pradesh – 466114
+                  </div>
+                  <div className=" text-xs mt-1 font-semibold  ">
+                    Phone: +91/0 75 6025 4500 / 501 / 502
+                  </div>
+                  <div className=" text-xs mt-1 font-semibold   ">
+                    +91 /07560350900 / 901 / 902
+                  </div>
+                  <div className=" text-xs mt-6 font-semibold   ">
+                    VIT Bhopal Information Center
+                  </div>
+                  <div className=" text-xs mt-6 font-semibold text-gray-500  ">
+                    Indore
+                  </div>
                 </span>
-              </div>
-              <div>
-                <p className="mb-4  text-base font-medium">
-                  The Tailwind CSS Component library
-                </p>
-                <p className="text-sm text-gray-600">
-                  &copy; Copyright 2022. All Rights Reserved by DevUI.
-                </p>
               </div>
             </div>
           </div>
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
             <div className="h-full">
-              <h3 className="tracking-px mb-4  text-sm font-semibold uppercase text-white">
+              <h3 className="tracking-px mb-4  text-sm font-semibold  text-white">
                 SOCIAL MEDIA
               </h3>
 
