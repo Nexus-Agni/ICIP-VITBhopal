@@ -2,19 +2,20 @@ import React from 'react'
 import { Menu, X } from 'lucide-react'
 import VitLogo from "../../assets/vitLogo.png"
 import { NavLink } from 'react-router-dom'
+import Broucher from "../../../public/Brochure.pdf"
 
 const menuItems = [
   {
     name: 'Home',
-    href: '#',
+    to: '/',
   },
   {
     name: 'About',
-    href: '#',
+    to: '/about',
   },
   {
     name: 'Contact',
-    href: '#',
+    to: '/contact',
   },
 ]
 
@@ -38,8 +39,11 @@ export function Navbar() {
             {menuItems.map((item) => (
               <li key={item.name}>
                 <NavLink
-                  href={item.href}
-                  className="text-sm font-semibold text-white hover:text-[#f2b705]"
+                  to={item.to}
+                  className={({ isActive }) =>
+                  `-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:text-[#f2b705]
+                  ${isActive?"font-semibold text-[#f2b705]": "font-semibold text-white"}`
+                }
                 >
                   {item.name}
                 </NavLink>
@@ -48,12 +52,12 @@ export function Navbar() {
           </ul>
         </div>
         <div className="hidden lg:block">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href={Broucher} target="_blank" rel="noopener noreferrer">
               <button
               type="button"
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#f2b705] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black transition-all ease-in-out duration-300 hover:text-black"
             >
-              Button text
+              Download Brochure
             </button>
             </a>
         </div>
@@ -81,24 +85,24 @@ export function Navbar() {
                 <div className="mt-6">
                   <nav className="grid gap-y-4">
                     {menuItems.map((item) => (
-                      <NavLink
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:text-[#f2b705]"
+                        <NavLink
+                        to={item.to}
+                        className={({ isActive }) =>
+                        `-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:text-[#f2b705]
+                        ${isActive?"font-semibold text-[#f2b705]": "font-semibold text-white"}`
+                      }
                       >
-                        <span className="ml-3 text-base font-medium text-white  hover:text-[#f2b705]">
-                          {item.name}
-                        </span>
+                        {item.name}
                       </NavLink>
                     ))}
                   </nav>
                 </div>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href={Broucher} target="_blank" rel="noopener noreferrer">
                     <button
                     type="button"
                     className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#f2b705] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:text-black transition-all ease-in-out duration-300"
                   >
-                    Button text
+                    Download Brochure
                   </button>
                   </a>
               </div>
