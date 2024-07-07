@@ -45,7 +45,7 @@ export function Navbar() {
 
   return (
     <div className={`w-full bg-[#2b3359] text-white sticky top-0 shadow-lg z-40 ${
-      isScrolled? "bg-opacity-40 bg-[#2b3359] backdrop-blur-sm shadow-sm transition-all ease-in-out": ""}`}>
+      isScrolled? "bg-opacity-40 bg-[#2b3359] backdrop-blur-md shadow-sm transition-all ease-in-out": ""}`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
