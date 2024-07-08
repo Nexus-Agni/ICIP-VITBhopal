@@ -14,7 +14,11 @@ export function EventInfo() {
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             IMPORTANT DATES
           </h2>
-          <img src={importantDates} alt="Important Dates" className="rounded-2xl w-full"/>
+          <img
+            src={importantDates}
+            alt="Important Dates"
+            className="rounded-2xl w-full"
+          />
         </div>
         {/* <img
           src="/linear.webp"
@@ -24,12 +28,27 @@ export function EventInfo() {
           className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
         /> */}
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          No shirt, no shoes, no weapons.
+      <WobbleCard containerClassName="col-span-1 min-h-[300px] flex justify-center ">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white ">
+          ACCOUNT DETAILS
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
+          Account Holder : SASL VIT Bhopal
+        </p>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
+          IFSC Code : IDIB000V143
+        </p>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
+          Bank Name : Indian Bank
+        </p>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
+          Account Number : 6994648311
+        </p>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
+          Branch Code : 2953
+        </p>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
+          Swift Code : IDIBINBBMAS
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
@@ -37,7 +56,13 @@ export function EventInfo() {
           <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             REGISTER NOW !
           </h2>
-          <img src={feesTable} alt="" width={700} height={700}  className="rounded-2xl"/>
+          <img
+            src={feesTable}
+            alt=""
+            width={700}
+            height={700}
+            className="rounded-2xl"
+          />
         </div>
         {/* <img
           src="/linear.webp"
