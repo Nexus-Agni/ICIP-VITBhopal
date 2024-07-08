@@ -101,7 +101,7 @@ export const Card = ({
         source: string;
     }) => {
         return (
-        <img src={source} alt="" className={className} height={500} width={500}/>
+        <img src={source} alt="" className="rounded-2xl" height={500} width={500}/>
         );
     };
   

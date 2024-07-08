@@ -9,7 +9,7 @@ export function Leadership() {
 
     const LeadershipItems = [
         {
-            title : "Dr. G Vishwanathan",
+            title : "Dr. G. Viswanathan",
             description : "Chancellor",
             img:chancellor
         },
@@ -19,7 +19,7 @@ export function Leadership() {
             img:vp
         },
         {
-            title : "Ms. Kadambari Viswanathan",
+            title : "Ms. Kadhambari S Viswanathan",
             description : "Assistant Vice President",
             img:avp
         },
