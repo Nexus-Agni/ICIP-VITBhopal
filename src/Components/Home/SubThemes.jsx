@@ -10,6 +10,7 @@ import st6 from "../../assets/st6.png"
 import st7 from "../../assets/st7.png"
 import st8 from "../../assets/st8.png"
 import st9 from "../../assets/st9.png"
+import { TracingBeam } from '../ui/tracing-beam'
 
 function SubThemes() {
     const content = [
@@ -106,14 +107,14 @@ function SubThemes() {
         }
     ]
   return (
-    <>
+    <TracingBeam>
     <div className='text-center text-4xl lg:text-8xl flex justify-center bg-black items-center text-white py-5'>
         <Highlight className='text-yellow-300'>SUB THEMES</Highlight>
     </div>
     <div className=''>
         <StickyScroll content={content} />
     </div>
-    </>
+    </TracingBeam>
   )
 }
 
