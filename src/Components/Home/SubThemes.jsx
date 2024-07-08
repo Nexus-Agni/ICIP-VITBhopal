@@ -107,7 +107,7 @@ function SubThemes() {
     ]
   return (
     <>
-    <div className='text-center text-4xl lg:text-8xl flex justify-center bg-black items-center text-white'>
+    <div className='text-center text-4xl lg:text-8xl flex justify-center bg-black items-center text-white py-5'>
         <Highlight className='text-yellow-300'>SUB THEMES</Highlight>
     </div>
     <div className=''>
