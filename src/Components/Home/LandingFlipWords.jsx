@@ -19,7 +19,7 @@ export function FlipWordsDemo() {
         </div>
       </div>
       <Highlight className="lg:text-2xl mt-6 text-lg text-center text-yellow-300 ">
-        25th - 27th November 2024
+        5th-7th December 2024
       </Highlight>
     </div>
   );

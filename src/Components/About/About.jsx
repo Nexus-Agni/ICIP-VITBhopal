@@ -1,8 +1,14 @@
 import React from 'react'
+import { AboutLanding } from './AboutLanding'
+import AboutBody from './AboutBody'
+
 
 function About() {
   return (
-    <div>This is About page</div>
+    <div>
+      <AboutLanding/>
+      <AboutBody/>
+    </div>
   )
 }
 
