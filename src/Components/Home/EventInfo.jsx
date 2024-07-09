@@ -51,13 +51,12 @@ export function EventInfo() {
           Swift Code : IDIBINBBMAS
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        
-        <div className="w-full flex flex-col md:flex-row md:justify-around space-y-4 md:space-y-0">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]  ">
+        <div className="w-full flex flex-col md:flex-row md:justify-around space-y-4 md:space-y-0 ">
           <div>
-          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            REGISTER NOW !
-          </h2>
+            <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              REGISTER NOW !
+            </h2>
           </div>
           <img
             src={feesTable}
@@ -67,23 +66,22 @@ export function EventInfo() {
             className="rounded-2xl"
           />
         </div>
-        {/* <img
-          src="/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-        /> */}
       </WobbleCard>
-      <a href="https://cmt3.research.microsoft.com/ICIPMSL2024/Submission/Index">
-      <button
-              type="button"
-              className="rounded-md  px-3 py-2 text-sm font-semibold text-white shadow-sm bg-[#f2b705] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black transition-all ease-in-out duration-300 hover:text-black w-full "
-              
-            >
-              Register
-            </button>
-      </a>
+      <br />
+
+      <div className="mt-2 flex items-center justify-center">
+        <a
+          href="https://cmt3.research.microsoft.com/ICIPMSL2024/Submission/Index"
+          className="rounded-md overflow-hidden"
+        >
+          <button
+            type="button"
+            className="px-16 py-4 mt-2 text-lg font-bold text-white bg-[#f2b705] shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-all ease-in-out duration-300 hover:bg-yellow-400 hover:text-black"
+          >
+            REGISTER NOW
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
