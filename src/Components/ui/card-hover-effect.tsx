@@ -3,29 +3,28 @@ import { cn } from "../../utils/cn.ts";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
-
 export const HoverEffect = ({
-    items,
-    className,
+  items,
+  className,
 }: {
-    items: {
-        title: string;
-        description: string;
-        // link: string;
-        img : string;
-    }[];
-    className?: string;
+  items: {
+    title: string;
+    description: string;
+    // link: string;
+    img: string;
+  }[];
+  className?: string;
 }) => {
-    let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-    return (
-        <div
-            className={cn(
-                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
-                className
-            )}
-        >
-            {items.map((item, idx) => (
+  return (
+    <div
+      className={cn(
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        className
+      )}
+    >
+      {items.map((item, idx) => (
         <div
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -49,7 +48,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardImage source={item.img}/>
+            <CardImage source={item.img} />
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
@@ -60,67 +59,66 @@ export const HoverEffect = ({
 };
 
 export const Card = ({
-    className,
-    children,
-  }: {
-    className?: string;
-    children: React.ReactNode;
-  }) => {
-    return (
-      <div
-        className={cn(
-          "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
-          className
-        )}
-      >
-        <div className="relative z-50">
-          <div className="p-4">{children}</div>
-        </div>
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <div
+      className={cn(
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        className
+      )}
+    >
+      <div className="relative z-50">
+        <div className="p-4">{children}</div>
       </div>
-    );
-  };
-  export const CardTitle = ({
-    className,
-    children,
-  }: {
-    className?: string;
-    children: React.ReactNode;
-  }) => {
-    return (
-      <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
-        {children}
-      </h4>
-    );
-  };
+    </div>
+  );
+};
+export const CardTitle = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+      {children}
+    </h4>
+  );
+};
 
-    export const CardImage = ({
-        className,
-        source, 
-    }: {
-        className?: string;
-        source: string;
-    }) => {
-        return (
-        <img src={source} alt="" className="rounded-2xl" height={500} width={500}/>
-        );
-    };
-  
+export const CardImage = ({
+  className,
+  source,
+}: {
+  className?: string;
+  source: string;
+}) => {
+  return (
+    <img src={source} alt="" className="rounded-2xl" height={500} width={500} />
+  );
+};
 
-  export const CardDescription = ({
-    className,
-    children,
-  }: {
-    className?: string;
-    children: React.ReactNode;
-  }) => {
-    return (
-      <p
-        className={cn(
-          "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
-          className
-        )}
-      >
-        {children}
-      </p>
-    );
-  };
+export const CardDescription = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
+};
