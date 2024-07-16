@@ -25,7 +25,7 @@ export function Leadership() {
       img: avp,
     },
     {
-      title: "Dr. Senthil Kumar Aramugam",
+      title: "Dr. Senthil Kumar Arumugam",
       description: "Vice Chancellor",
       img: vc,
     },
