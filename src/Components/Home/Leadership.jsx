@@ -30,7 +30,7 @@ export function Leadership() {
       img: vc,
     },
     {
-      title: "Dr. Debasis Adhikari",
+      title: "Dr. Debashis Adhikari",
       description: "Registrar",
       img: registrar,
     },
